@@ -1,2 +1,35 @@
-<h1>Welcome to Clozett, <%= @name + "!"  %>  </h1>
+<h1>Welcome to Clozett
+<%=
+  if @name
+    "Hello #{@name}!"
+  end
+%>
+ </h1>
 
+<table>
+
+  <thead>
+   <tr>
+	<td>Brand</td>
+        <td>Origin Country</td>
+	<td>Color</td>
+	<td>Size</td>
+	<td>Category</td>
+   </tr>
+  </thead>
+
+  <tbody>
+	<% @clothes.each do |clothe| %>
+	<tr>
+		<td><%= clothe.brand %></td>
+		<td><%= clothe.origin %></td>
+		<td><%= clothe.color %></td>
+		<td><%= clothe.size %></td>
+		<td><%= clothe.catogory %></td>
+	</tr>
+	
+	<% end %>	 
+  </tbody>
+
+
+</table>

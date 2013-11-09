@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyText
+  origin: MyText
+  color: MyText
+  size: MyText
+  catogory: MyText
+  price: 1
+
+two:
+  brand: MyText
+  origin: MyText
+  color: MyText
+  size: MyText
+  catogory: MyText
+  price: 1
